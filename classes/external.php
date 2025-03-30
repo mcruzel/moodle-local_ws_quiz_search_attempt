@@ -93,8 +93,6 @@ class external extends \external_api {
             }
         }
         
-        var_dump($where);
-        var_dump($sqlparams);
         // Récupérer les tentatives
         $attempts = $DB->get_records_select('quiz_attempts', $where, $sqlparams);
     
